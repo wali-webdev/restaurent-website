@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spice Garden | Fine Dining Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="restaurant-style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container nav">
+        <a href="#home" class="logo"
+          ><div class="logo-icon"><i class="fas fa-utensils"></i></div>
+          Spice<span>Garden</span></a
+        >
+        <ul class="nav-links" id="navList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li>
+            <a href="#reservation" class="cta"
+              >Book a Table <i class="fas fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <i class="fas fa-award"></i> Award-Winning Restaurant 2025
+          </div>
+          <h1>Experience <span class="gold">Fine Dining</span> At Its Best</h1>
+          <p>
+            Welcome to Spice Garden — where authentic flavors meet modern
+            elegance. Enjoy our chef-crafted dishes made with the freshest
+            ingredients.
+          </p>
+          <div class="hero-btns">
+            <a href="#reservation" class="btn btn-primary"
+              ><i class="fas fa-calendar-check"></i> Book a Table</a
+            >
+            <a href="#menu" class="btn btn-outline"
+              ><i class="fas fa-book-open"></i> View Menu</a
+            >
+          </div>
+          <div class="hero-info">
+            <div class="hero-info-item">
+              <i class="fas fa-clock"></i> Open: 11 AM – 11 PM
+            </div>
+            <div class="hero-info-item">
+              <i class="fas fa-star"></i> 4.9/5 (2,500+ reviews)
+            </div>
+          </div>
+        </div>
+        <div class="hero-plate">
+          <div class="floating-tag t1">
+            <i class="fas fa-fire"></i> Chef's Special
+          </div>
+          <div class="floating-tag t2">
+            <i class="fas fa-leaf"></i> Fresh Daily
+          </div>
+          <div class="plate"><i class="fas fa-utensils"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <h3 data-count="15">0</h3>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat">
+          <h3 data-count="50">0</h3>
+          <p>Signature Dishes</p>
+        </div>
+        <div class="stat">
+          <h3 data-count="25">0</h3>
+          <p>Expert Chefs</p>
+        </div>
+        <div class="stat">
+          <h3 data-count="10">0</h3>
+          <p>K+ Happy Guests</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-label reveal">OUR STORY</div>
+        <h2 class="section-title reveal">
+          About <span class="gold">Spice Garden</span>
+        </h2>
+        <p class="section-sub reveal">
+          A passion for food, a love for people — serving happiness since 2010.
+        </p>
+        <div class="about-inner">
+          <div class="about-img reveal">
+            <div class="about-img-box"><i class="fas fa-utensils"></i></div>
+            <div class="about-badge">
+              <h4>15+</h4>
+              <p>Years Experience</p>
+            </div>
+          </div>
+          <div class="about-text reveal d1">
+            <h2>
+              Crafting <span class="gold">Culinary Memories</span> Since 2010
+            </h2>
+            <p>
+              At Spice Garden, we believe every meal should be an experience.
+              Our chefs combine traditional recipes with modern techniques to
+              create dishes that delight all your senses.
+            </p>
+            <p>
+              From the freshest local ingredients to the warmest hospitality,
+              every detail is carefully crafted to make your visit
+              unforgettable.
+            </p>
+            <div class="about-features">
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i> Fresh Ingredients
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i> Expert Chefs
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i> Cozy Ambience
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i> Fast Service
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-label reveal">DELICIOUS SELECTION</div>
+        <h2 class="section-title reveal">
+          Our <span class="gold">Signature Menu</span>
+        </h2>
+        <p class="section-sub reveal">Handpicked dishes loved by our guests</p>
+        <div class="menu-tabs reveal">
+          <button class="menu-tab active" data-cat="all">All</button>
+          <button class="menu-tab" data-cat="starters">Starters</button>
+          <button class="menu-tab" data-cat="mains">Main Course</button>
+          <button class="menu-tab" data-cat="desserts">Desserts</button>
+          <button class="menu-tab" data-cat="drinks">Drinks</button>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="section chef-section" id="chefs">
+      <div class="container">
+        <div class="section-label reveal">MEET THE EXPERTS</div>
+        <h2 class="section-title reveal">
+          Our Master <span class="gold">Chefs</span>
+        </h2>
+        <p class="section-sub reveal">
+          The talented team behind every unforgettable dish
+        </p>
+        <div class="chefs-grid">
+          <div class="chef reveal">
+            <div class="chef-img"><i class="fas fa-user-tie"></i></div>
+            <h3>Chef Marco Rossi</h3>
+            <p>Head Chef • Italian Cuisine</p>
+            <div class="chef-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i></a
+              ><a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="chef reveal d1">
+            <div class="chef-img"><i class="fas fa-user-tie"></i></div>
+            <h3>Chef Ayesha Khan</h3>
+            <p>Pastry Chef • Desserts</p>
+            <div class="chef-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i></a
+              ><a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="chef reveal d2">
+            <div class="chef-img"><i class="fas fa-user-tie"></i></div>
+            <h3>Chef David Chen</h3>
+            <p>Sous Chef • Asian Fusion</p>
+            <div class="chef-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i></a
+              ><a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="chef reveal">
+            <div class="chef-img"><i class="fas fa-user-tie"></i></div>
+            <h3>Chef Sara Ahmed</h3>
+            <p>Grill Master • BBQ</p>
+            <div class="chef-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i></a
+              ><a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-label reveal">HAPPY GUESTS</div>
+        <h2 class="section-title reveal">
+          What Our <span class="gold">Guests Say</span>
+        </h2>
+        <p class="section-sub reveal">Real feedback from real diners</p>
+        <div class="testi-grid">
+          <div class="testi reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              "The best dining experience I've had in years. The food was
+              absolutely incredible and the service was top-notch!"
+            </p>
+            <div class="testi-author">
+              <div
+                class="av"
+                style="background: linear-gradient(135deg, #f59e0b, #d97706)"
+              >
+                JS
+              </div>
+              <div><strong>John Smith</strong><span>Regular Guest</span></div>
+            </div>
+          </div>
+          <div class="testi reveal d1">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Spice Garden never disappoints. The ambiance, the flavors, the
+              hospitality — everything is perfect every time."
+            </p>
+            <div class="testi-author">
+              <div
+                class="av"
+                style="background: linear-gradient(135deg, #ef4444, #f97316)"
+              >
+                MA
+              </div>
+              <div><strong>Maria Ali</strong><span>Food Blogger</span></div>
+            </div>
+          </div>
+          <div class="testi reveal d2">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Celebrated our anniversary here and it was magical! The chef's
+              special tasting menu was out of this world."
+            </p>
+            <div class="testi-author">
+              <div
+                class="av"
+                style="background: linear-gradient(135deg, #10b981, #059669)"
+              >
+                RK
+              </div>
+              <div><strong>Robert Khan</strong><span>Happy Customer</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reservation" id="reservation">
+      <div class="container reservation-inner">
+        <div class="reservation-text reveal">
+          <h2>Reserve Your <span class="gold">Table Today</span></h2>
+          <p>
+            Book a table for a memorable dining experience. Perfect for family
+            dinners, date nights, or special celebrations.
+          </p>
+          <div class="res-hours">
+            <div class="res-hours-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Opening Hours</h4>
+                <p>Mon–Sun: 11 AM – 11 PM</p>
+              </div>
+            </div>
+            <div class="res-hours-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Call Us</h4>
+                <p>+1 234 567 890</p>
+              </div>
+            </div>
+            <div class="res-hours-item">
+              <i class="fas fa-location-dot"></i>
+              <div>
+                <h4>Visit Us</h4>
+                <p>123 Food Street, New York</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form
+          class="res-form reveal d1"
+          onsubmit="
+            event.preventDefault();
+            alert('✅ Your table has been booked! We will contact you soon.');
+            this.reset();
+          "
+        >
+          <h3>Book Your Table</h3>
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-row">
+            <input type="tel" placeholder="Phone Number" required />
+            <input type="date" required />
+          </div>
+          <div class="form-row" style="margin-bottom: 16px">
+            <select required>
+              <option value="">Number of Guests</option>
+              <option>1 Person</option>
+              <option>2 People</option>
+              <option>3 People</option>
+              <option>4 People</option>
+              <option>5+ People</option>
+            </select>
+            <select required>
+              <option value="">Time</option>
+              <option>12:00 PM</option>
+              <option>2:00 PM</option>
+              <option>6:00 PM</option>
+              <option>8:00 PM</option>
+              <option>10:00 PM</option>
+            </select>
+          </div>
+          <button type="submit">
+            <i class="fas fa-calendar-check"></i> Confirm Reservation
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-label reveal">VISUAL DELIGHT</div>
+        <h2 class="section-title reveal">
+          Our <span class="gold">Gallery</span>
+        </h2>
+        <p class="section-sub reveal">
+          A glimpse into the Spice Garden experience
+        </p>
+        <div class="gallery-grid reveal">
+          <div class="gallery-item"><i class="fas fa-pizza-slice"></i></div>
+          <div class="gallery-item"><i class="fas fa-hamburger"></i></div>
+          <div class="gallery-item"><i class="fas fa-drumstick-bite"></i></div>
+          <div class="gallery-item"><i class="fas fa-ice-cream"></i></div>
+          <div class="gallery-item"><i class="fas fa-mug-hot"></i></div>
+          <div class="gallery-item"><i class="fas fa-fish"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="reveal">Ready for an Unforgettable Meal?</h2>
+        <p class="reveal">Book your table now and taste the difference.</p>
+        <a href="#reservation" class="btn-white reveal"
+          ><i class="fas fa-calendar-check"></i> Reserve Now</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <a
+            href="#home"
+            class="logo"
+            style="color: #fff; margin-bottom: 14px; display: inline-flex"
+            ><div class="logo-icon"><i class="fas fa-utensils"></i></div>
+            Spice<span>Garden</span></a
+          >
+          <p>
+            Experience fine dining at its best. Fresh ingredients, expert chefs
+            and unforgettable flavors since 2010.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li>Mon–Fri: 11 AM – 11 PM</li>
+            <li>Sat–Sun: 10 AM – 12 AM</li>
+            <li>Holidays: 12 PM – 10 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@spicegarden.com</li>
+            <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+            <li><i class="fas fa-location-dot"></i> 123 Food Street, NY</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        © 2025 Spice Garden. All rights reserved. | Built with ❤️ by Waliullah
+      </div>
+    </footer>
+
+    <button class="back-top" id="backTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="restaurant-script.js"></script>
+  </body>
+</html>
